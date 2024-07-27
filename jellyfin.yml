@@ -14,8 +14,8 @@ services:
       - DOCKER_MODS=linuxserver/mods:jellyfin-opencl-intel
     volumes:
       - /mnt/user/appdata/jellyfin:/config
-      - /media/tvshows:/data/tvshows
-      - /media/movies:/data/movies
+      - /mnt/user/media/tvshows:/data/tvshows
+      - /mnt/user/media/movies:/data/movies
     devices:
       - /dev/dri:/dev/dri
     ports:
