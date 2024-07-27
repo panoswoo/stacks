@@ -1,5 +1,5 @@
 services:
-  qbittorrent:
+  alist:
     labels:
       "net.unraid.docker.icon": "https://pic.imgdb.cn/item/654c7a1cc458853aefb29f0f.png"
       # "net.unraid.docker.managed": "dockerman"
