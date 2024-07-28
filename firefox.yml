@@ -1,0 +1,20 @@
+services:
+  firefox:
+    labels:
+      "net.unraid.docker.icon": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/firefox-logo.png"
+      # "net.unraid.docker.managed": "dockerman"
+      "net.unraid.docker.shell": "/bin/bash"
+      "net.unraid.docker.webui": "http://[IP]:[PORT:3000]/"
+    image: lscr.io/linuxserver/firefox:latest
+    container_name: firefox
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+    volumes:
+      - /mnt/user/appdata/firefox:/config
+    ports:
+      - 3000:3000
+      - 3001:3001
+    shm_size: "1gb"
+    restart: unless-stopped
