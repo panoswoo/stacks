@@ -14,5 +14,5 @@ services:
       - /mnt/user/appdata/nginx-ui/nginx-ui:/etc/nginx-ui
     ports:
       - 8088:80
-      - 8443:443
+      - 8443:8443
     restart: unless-stopped
