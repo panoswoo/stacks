@@ -1,7 +1,7 @@
 services:
   jellyfin:
     labels:
-      "net.unraid.docker.icon": "https://jellyfin.org/images/logo.svg"
+      "net.unraid.docker.icon": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jellyfin-logo.png"
       # "net.unraid.docker.managed": "dockerman"
       "net.unraid.docker.shell": ""
       "net.unraid.docker.webui": "http://[IP]:[PORT:8096]/"
